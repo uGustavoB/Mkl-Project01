@@ -27,6 +27,7 @@
 
 body{
     height: 100vh;
+    overflow-x: hidden;
 }
 
 :root{
@@ -44,13 +45,17 @@ a{
 
 /* NavBar */
 
+.tr-in-out{
+    transition: all 0.7s ease-in-out;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
     height: 8vh;
-    color: #2a2b56;
+    color: #2A2B5B;
 }
 
 .fl-b{
@@ -83,7 +88,12 @@ nav{
     position: absolute;
     top: 60px;
 }
-
+.menu-nav{
+    display: none;
+}
+.nav-list{
+    display: flex;
+}
 nav ul{
     list-style: none;
 }
@@ -92,7 +102,20 @@ nav ul li{
     margin: 0 20px;
 }
 .nav-list a{
-    color: #2a2b56;
+    color: #2A2B5B;
+}
+.shadow-div{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #2A2B5B;
+    transition: 0.5s;
 }
 
 /* Menu Principal */
@@ -105,26 +128,64 @@ main{
     height: 92%;
 }
 
-.mobile-menu{
-    display: none;
-}
-
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
     .menu{
         display: none;
+        text-align: center;
+    }
+    .shadow-div{
+        display: block;
     }
     .mobile-menu{
         display: block;
     }
+    .line1, .line2, .line3{
+        margin: 8px auto;
+    }
     .nav-list{
-        display: none;
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        width: 50vw;
+        height: 86vh;
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .nav-list li a{
+        padding: 15px;
+    }
+    .menu-nav{
+        display: block;
     }
     nav{
-        justify-content: center;
+        justify-content: space-evenly;
+        height: 14vh;
+    }
+    main{
+        height: 86%;
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+        top: 25px;
+    }
+    .logo-bg{
+        width: 200px;
+        height: 200px;
     }
 }
 
-/* .nav-list.active{
+.nav-list.active{
     transform: translateX(0);
 }
 
@@ -147,4 +208,4 @@ main{
 }
 .mobile-menu.active .line3{
     transform: rotate(45deg) translate(-5px, -7px);
-} */
+}
