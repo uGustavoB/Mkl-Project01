@@ -25,6 +25,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    height: 100vh;
+}
+
 :root{
     --white: #F8F7F3;
     --gray: #3B3B3B;
@@ -98,9 +102,7 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* filter: brightness(0.50) opacity(0.90); */
-    height: 92vh;
-
+    height: 92%;
 }
 
 .mobile-menu{
