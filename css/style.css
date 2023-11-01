@@ -28,6 +28,7 @@
 body{
     height: 100vh;
     overflow-x: hidden;
+    background-color: var(--white);
 }
 
 :root{
@@ -36,6 +37,7 @@ body{
     --vinered: #CD0232;
     --darkblue: #011246;
     --blue: #2552E6;
+    --purple: #2A2B5B;
     --lightgreen: #8CE619;
     --lightbrown: #FE9B67;
 }
@@ -54,8 +56,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
+    width: 100%;
     height: 8vh;
-    color: #2A2B5B;
+    color: var(--purple);
 }
 
 .fl-b{
@@ -65,6 +68,8 @@ nav{
 .menu{
     width: 100px;
     text-align: right;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .logo-bg{
@@ -79,10 +84,7 @@ nav{
 }
 
 .logo{
-    background-image: url(../img/logo.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url(../img/logo.png) center/contain no-repeat;
     width: 300px;
     height: 300px;
     position: absolute;
@@ -102,7 +104,7 @@ nav ul li{
     margin: 0 20px;
 }
 .nav-list a{
-    color: #2A2B5B;
+    color: var(--purple);
 }
 .shadow-div{
     display: none;
@@ -114,8 +116,8 @@ nav ul li{
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background: #2A2B5B;
-    transition: 0.5s;
+    background: var(--purple);
+    transition: 0.7s ease-in-out;
 }
 
 /* Menu Principal */
@@ -182,7 +184,18 @@ main{
     .logo-bg{
         width: 200px;
         height: 200px;
+        border-radius: 70px;
     }
+}
+
+nav.active{
+    justify-content: space-evenly;
+}
+nav.active, .logo-bg{
+    margin-right: 25px;
+}
+.div-hidden{
+    display: none;
 }
 
 .nav-list.active{
@@ -209,3 +222,9 @@ main{
 .mobile-menu.active .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
+/* footer{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+} */
