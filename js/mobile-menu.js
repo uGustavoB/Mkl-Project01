@@ -24,7 +24,7 @@ class MobileNavBar{
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);  
         this.navLogo.classList.toggle(this.activeClass);
-        if (this.navList.classList.contains("active")){
+        if (this.navList.classList.contains(this.activeClass)){
             this.divHidden.classList.add("div-hidden");
         } else{
             this.divHidden.classList.remove("div-hidden");

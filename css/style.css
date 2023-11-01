@@ -15,6 +15,18 @@
     src: local('Montserrat Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
 }
 
+/* Cores personalizadas */
+:root{
+    --white: #F8F7F3;
+    --gray: #3B3B3B;
+    --vinered: #CD0232;
+    --darkblue: #011246;
+    --blue: #2552E6;
+    --purple: #2A2B5B;
+    --lightgreen: #8CE619;
+    --lightbrown: #FE9B67;
+}
+
 /* Reset de estilos */
 *{
     margin: 0;
@@ -30,18 +42,6 @@ body{
 }
 a{
     text-decoration: none;
-}
-
-/* Cores personalizadas */
-:root{
-    --white: #F8F7F3;
-    --gray: #3B3B3B;
-    --vinered: #CD0232;
-    --darkblue: #011246;
-    --blue: #2552E6;
-    --purple: #2A2B5B;
-    --lightgreen: #8CE619;
-    --lightbrown: #FE9B67;
 }
 
 /* Atribuições Múltiplas */
@@ -194,6 +194,7 @@ main{
     transition: all 0.7s ease-in-out;
 }
 
+/* Usadas com JavaScript */
 .mobile-menu.active .line1{
     transform: rotate(-45deg) translate(-8px, 8px);
 }
@@ -207,9 +208,6 @@ main{
 /* Usadas com JavaScript */
 nav.active{
     justify-content: space-evenly;
-}
-nav.active, .logo-bg{
-    margin-right: 25px;
 }
 .div-hidden{
     display: none;
