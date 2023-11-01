@@ -112,6 +112,7 @@ nav ul li{
 /* Menu Principal */
 .background{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), center/cover no-repeat url(../img/background.png);
+    background-attachment: fixed;
     height: 92vh;
 }
 .main-text{
@@ -138,6 +139,7 @@ nav ul li{
     background: url(../img/brazil-flag.jpg) center/contain no-repeat;
     width: 100px;
     height: 69px;
+    margin-top: 30px;
     border-radius: 10px;
 }
 
@@ -163,7 +165,7 @@ main{
     align-items: start;
     text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--lightgray);
     padding: 100px 15%;
 }
@@ -268,3 +270,8 @@ nav.active{
 .nav-list.active{
     transform: translateX(0);
 }
+
+.logo-bg.active{
+    margin-right: 90px;
+}
+

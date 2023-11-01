@@ -1,10 +1,11 @@
 class MobileNavBar{
-    constructor(mobileMenu, navList, navLinks, navLogo, divHidden){
+    constructor(mobileMenu, navList, navLinks, nav, divHidden, navLogo){
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
-        this.navLogo = document.querySelector(navLogo);
+        this.nav = document.querySelector(nav);
         this.divHidden = document.querySelector(divHidden);
+        this.navLogo = document.querySelector(navLogo);
         this.activeClass = "active";
 
         this.handleClick = this.handleClick.bind(this);
@@ -23,6 +24,7 @@ class MobileNavBar{
     handleClick(){
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);  
+        this.nav.classList.toggle(this.activeClass);
         this.navLogo.classList.toggle(this.activeClass);
         if (this.navList.classList.contains(this.activeClass)){
             this.divHidden.classList.add("div-hidden");
@@ -50,6 +52,7 @@ const mobileNavBar = new MobileNavBar(
     ".nav-list li",
     "nav",
     ".shadow-div",
+    ".logo-bg",
 );
 
 mobileNavBar.init();
