@@ -24,6 +24,7 @@
     --darkblue: #011246;
     --blue: #2552E6;
     --purple: #2A2B5B;
+    --green: #019907;
     --lightgreen: #8CE619;
     --lightbrown: #FE9B67;
     --yellow: #FFBF2A;
@@ -69,6 +70,7 @@ nav{
     justify-content: space-between;
     width: 100%;
     height: 8vh;
+    background-color: var(--white);
 }
 
 .menu{
@@ -110,6 +112,10 @@ nav ul li{
 }
 
 /* Menu Principal */
+main{
+    background-color: var(--lightgray);
+}
+
 .background{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), center/cover no-repeat url(../img/background.png);
     background-attachment: fixed;
@@ -157,26 +163,83 @@ nav ul li{
 }
 
 /* Sobre o restaurante */
-main{
+.about{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: start;
+    justify-content: space-around;
+    align-items: stretch;
     text-align: center;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: var(--lightgray);
     padding: 100px 15%;
 }
 .about-title{
     flex-basis: 100%;
+    margin-bottom: 50px;
 }
-.about-a{
-    flex-basis: calc(100% / 3);
+.about-title h1{
+    font-size: 3rem;
+    margin: 1.5rem 0;
 }
+.about-title p{
+    font-size: 1.3rem;
+}
+
+.about-restaurant{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: 50%;
+}
+.about-restaurant h1{
+    margin: 15px 10px;
+    font-size: 2rem;
+}
+.about-restaurant p{
+    line-height: 1.7rem;
+    font-size: 20px;
+    margin: auto 15px;
+}
+.about-restaurant ul{
+    list-style: circle;
+    list-style-position: inside;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+.about-restaurant ul li{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+.about-mission-img{
+    background: url(../img/missao.png) center/contain no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+}
+.about-values-img{
+    background: url(../img/valores.png) center/contain no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+}
+
+/* Divisão verde */
+.fr-green{
+    background-color: var(--green);
+    width: 96%;
+    height: 35px;
+    margin: 0 auto 100px auto;
+    border-radius: 16px;
+}
+
+/* Carrossel */
+
 /* Media query's */
-@media screen and (max-width: 999px){
+@media screen and (max-width: 999px){d
     nav{
         justify-content: space-evenly;
         height: 14vh;
@@ -192,7 +255,7 @@ main{
     }
     .nav-list{
         position: absolute;
-        top: 14vh;
+        top: 8vh;
         right: 0;
         width: 50vw;
         height: 86vh;
@@ -225,6 +288,12 @@ main{
     .background{
         height: 86vh;
     }
+}
+
+@media screen and (max-width: 500px){
+    .logo-bg.active{
+        margin-right: 90px;
+    }    
 }
 
 /* KeyFrames */
@@ -270,8 +339,3 @@ nav.active{
 .nav-list.active{
     transform: translateX(0);
 }
-
-.logo-bg.active{
-    margin-right: 90px;
-}
-
