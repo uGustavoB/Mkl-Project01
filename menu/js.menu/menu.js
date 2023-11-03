@@ -1,13 +1,44 @@
- let btnMenu = document.getElementById('btn-menu')
- let menu = document.getElementById('menu-mobile')
- let overlayMenu = document.getElementById('overlay-menu')
- btnMenu.addEventListener('click', ()=>{
-     menu.classList.add('abrir-menu')
- })
-
- menu.addEventListener('click', ()=>{
-    menu.classList.remove('abrir-menu')
-}) 
-overlayMenu.addEventListener('click', ()=>{
-    menu.classList.remove('abrir-menu')
-}) 
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNavbar.init();
