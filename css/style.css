@@ -295,14 +295,14 @@ main section.reserva{
     margin: 5px 0;
 }
 
-input[type=text], input[type=number], input[type=date], input[type=email], select{
+input[type=text], input[type=number], input[type=date], input[type=email], input[type=tel], select{
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: var(--lightgray);
 }
-input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[type=email]:focus, select:focus{
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[type=email]:focus, input[type=tel]:focus, select:focus{
     background-color: #ddd;
     outline: none;
 }
@@ -339,7 +339,42 @@ input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[
     border-bottom-right-radius: 5px;
 }
 
-/* Carrossel */
+/* Footer */
+footer{
+    background-color: var(--purple);
+    color: var(--white);
+}
+footer .footer-ct{
+    display: flex;
+    padding: 80px 10%;
+}
+.footer-ct ul{
+    width: 25%;
+    list-style: none;
+}
+.footer-ct li{
+    margin: 10px 0;
+}
+.footer-ct li a{
+    color: var(--white);
+}
+.footer-ct ul > p{
+    margin-bottom: 40px;
+}
+.footer-ct h1{
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+.footer-ct .socials{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.footer-ct .socials i{
+    font-size: 1.5rem;
+    color: var(--white);
+}
 
 /* Media query's */
 @media screen and (max-width: 999px){
@@ -357,6 +392,7 @@ input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[
         display: block;
     }
     .nav-list{
+        display: none;
         position: absolute;
         top: 14vh;
         right: 0;
@@ -390,6 +426,19 @@ input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, input[
     }
     .background{
         height: 86vh;
+    }
+
+    /* Footer */
+    footer .footer-ct{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-ct ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-ct ul iframe{
+        width: 100%;
     }
 }
 @media screen and (max-width: 700px){
@@ -459,5 +508,6 @@ nav.active{
     display: none;
 }
 .nav-list.active{
+    display: flex;
     transform: translateX(0);
 }
