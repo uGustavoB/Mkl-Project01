@@ -266,7 +266,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
 
     section.desc-menu .txt-momento-ref{
-        background-color: #f7f7f5f0;
+        background-color: #f7f7f5;
         padding: 50px 20px;
         border-radius: 20px;
     }
@@ -284,6 +284,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
     section.desc-menu .txt-momento-ref ul li a {
         font-size: 31px;
+        color: #f7b61e;
     }
     
     section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{

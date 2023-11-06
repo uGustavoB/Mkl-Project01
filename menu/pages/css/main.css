@@ -209,46 +209,96 @@ div.nome-menu h1 {
     .mobile-menu.active .line3 {
       transform: rotate(45deg) translate(-5px, -7px);
     }
-    /* TIPO REFEICAO*/
-        main section.desc-menu {
-        padding: 20px 2%;
-        background-image: url(../img/imagem-momento-refeicao.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 87vh;
+    
+    /* ESCOLHA DA REGIAO */
+
+    main {
+        padding: 10px 2%;
+    }
+    main section.escolha-regiao div.img-escolha-regiao {
+        padding: 5px 4%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        background-color: #8CE619;
+        border-radius: 20px;
+    }
+    main section.escolha-regiao div.img-escolha-regiao h2 {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    main section.escolha-regiao div.img-escolha-regiao h2 span {
+        display: block;
+        font-size: 27px;
+        text-align: center;
     }
 
-    section.desc-menu .txt-momento-ref{
-        background-color: #ffdd00f0;
-        padding: 50px 20px;
-        border-radius: 20px;
+    main section.escolha-regiao div.img-escolha-regiao div.imagem-brasil-regiao img {
+        width: 360px;
+        height: 460px;
+        border-radius: 10px;
     }
-    
-    section.desc-menu .txt-momento-ref h2 {
-        font-size: 30px;
+
+    /* TXT REGIAO NORDESTE */
+
+    main section.nordeste {
+        padding: 10px 0%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    main section.nordeste .titulo-regiao h2{
+        font-size: 35px;
         text-transform: uppercase;
-        line-height: 40px;
+        text-align: center;
     }
-    section.desc-menu .txt-momento-ref h2 span{
-        display: block;
-        margin-left: 15px;
-        color: #0544c1;
-        font-size:31px;
+    main section.nordeste .txt-regiao h3 {
+        margin-top: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-style: oblique;
     }
-    section.desc-menu .txt-momento-ref ul li a {
-        font-size: 31px;
-    }
-    
-    section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
-        background-color: #ffffffee;
-        padding: 17px 30px;
+    main section.nordeste .txt-regiao .pratos-nordeste {
+        display: flex;
+        padding: 10px 5px;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: space-around;
+        background-color: #FFBF2A;
         border-radius: 20px;
-        transform: scale(1.05);
-        box-shadow: 0 0 8px #ffffffaf;
-        font-weight: 1;
+        font-weight: 800;
+    }
+    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato {
+        display: block;
+        color: #2A2B5B;
+        text-transform: uppercase;
+    }
+    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato h4{
+        text-transform: uppercase;
+        font-size: 20px;
+        font-style: oblique;
+    }
+    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato ul {
+        margin-top: 20px;
+        list-style: none;
+        font-size: 12px;
+    }
+    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato ul li {
+        margin-top: 20px;
+    }
+    main section.nordeste .txt-regiao .pratos-nordeste > img {
+        height: 190px;
+        width: 150px;
+        border-radius: 20px;
+        margin: 0 10px;
+
+        /*TXT REGIAO NORTE*/
+        
     }
 }
 
