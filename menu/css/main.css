@@ -56,6 +56,7 @@ div.nome-menu h1 {
     margin-left: 50px;
     font-size: 45px;
     text-transform: uppercase;
+    color: #2a2b5b;
 }
 
 .nav-list {
@@ -128,8 +129,8 @@ section.desc-menu .txt-momento-ref h2 {
 section.desc-menu .txt-momento-ref h2 span{
     display: block;
     margin-left: 15px;
-    color: #0544c1;
     font-size: 45px;
+    color: #2a2b5b;
 }
 section.desc-menu .txt-momento-ref .tipos-ref {
     margin-top: 30px;
@@ -213,7 +214,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
     
     .nav-list li a {
-        color: #0544c1;
+        color: #2a2b5b;
         text-decoration: none;
         font-size: 20px;
         text-transform: uppercase;
@@ -265,7 +266,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
 
     section.desc-menu .txt-momento-ref{
-        background-color: #ffdd00f0;
+        background-color: #f7f7f5f0;
         padding: 50px 20px;
         border-radius: 20px;
     }
@@ -278,7 +279,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     section.desc-menu .txt-momento-ref h2 span{
         display: block;
         margin-left: 15px;
-        color: #0544c1;
+        color: #2a2b5b;
         font-size:31px;
     }
     section.desc-menu .txt-momento-ref ul li a {
