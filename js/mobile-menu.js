@@ -19,6 +19,11 @@ class MobileNavBar{
                 index / 7 + 0.3
               }s`);
         });
+
+        // animação nav-list
+        this.navList.style.animation
+            ? (this.navList.style.animation = "")
+            : (this.navList.style.animation = `navLinkFade 0.7s`);
     }
 
     handleClick(){
