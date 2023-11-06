@@ -23,6 +23,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 100vh;
     overflow-x: hidden;
@@ -44,7 +47,7 @@ a{
     flex-basis: calc(100% / 3);
 }
 
-nav, .nav-list, .logo-bg, .background .main-section, .main-text{
+nav, .nav-list, .logo-bg, .background .main-section, .main-text, .down-arrow, section.about, .about-restaurant, section.type-foods, .foods, .drinks, .food-bg, .drinks-bg, section.reserva, footer .footer-ct, .footer-ct .socials{
     display: flex;
 }
 nav, .logo-bg, .background .main-section, .main-text{
@@ -138,7 +141,6 @@ nav ul li{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
@@ -149,7 +151,6 @@ nav ul li{
 
 /* Sobre o restaurante */
 main section.about{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -173,7 +174,6 @@ main section.about{
 }
 
 .about-restaurant{
-    display: flex;
     flex-direction: column;
     flex: 1;
     flex-basis: 50%;
@@ -230,7 +230,6 @@ main section.about{
 
 /* Sobre as comidas */
 main section.type-foods{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -238,9 +237,6 @@ main section.type-foods{
     height: 100%;
     background-color: var(--white);
     padding: 100px 10%;
-}
-.foods, .drinks{
-    display: flex;
 }
 .foods p, .drinks p{
     font-size: 1.3rem;
@@ -255,7 +251,6 @@ main section.type-foods{
     height: 300px;
     border-radius: 100px;
     margin: 0 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white);
@@ -281,7 +276,6 @@ main section.reserva{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat url(../img/reserva.jpg);
     width: 100%;
     height: 100%;
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -345,7 +339,6 @@ footer{
     color: var(--white);
 }
 footer .footer-ct{
-    display: flex;
     padding: 80px 10%;
 }
 .footer-ct ul{
@@ -366,7 +359,6 @@ footer .footer-ct{
     margin-bottom: 16px;
 }
 .footer-ct .socials{
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 80%;
