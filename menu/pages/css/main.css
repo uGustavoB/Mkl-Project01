@@ -210,36 +210,6 @@ div.nome-menu h1 {
       transform: rotate(45deg) translate(-5px, -7px);
     }
     
-    /* ESCOLHA DA REGIAO */
-
-    main {
-        padding: 10px 2%;
-    }
-    main section.escolha-regiao div.img-escolha-regiao {
-        padding: 5px 4%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #8CE619;
-        border-radius: 20px;
-    }
-    main section.escolha-regiao div.img-escolha-regiao h2 {
-        font-size: 22px;
-        text-transform: uppercase;
-    }
-    main section.escolha-regiao div.img-escolha-regiao h2 span {
-        display: block;
-        font-size: 27px;
-        text-align: center;
-    }
-
-    main section.escolha-regiao div.img-escolha-regiao div.imagem-brasil-regiao img {
-        width: 360px;
-        height: 460px;
-        border-radius: 10px;
-    }
-
     /* TXT REGIAO NORDESTE */
 
     main section.nordeste {
@@ -248,14 +218,9 @@ div.nome-menu h1 {
         margin: 0 auto;
     }
 
-    main section.nordeste .titulo-regiao h2{
-        font-size: 35px;
-        text-transform: uppercase;
-        text-align: center;
-    }
     main section.nordeste .txt-regiao h3 {
         margin-top: 10px;
-        font-size: 16px;
+        font-size: 25px;
         text-transform: uppercase;
         font-style: oblique;
     }
@@ -296,9 +261,60 @@ div.nome-menu h1 {
         width: 150px;
         border-radius: 20px;
         margin: 0 10px;
-
+    }
         /*TXT REGIAO NORTE*/
-        
+
+        main section.norte {
+            padding: 10px 0%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+    
+        main section.norte .txt-regiao h3 {
+            margin-top: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-style: oblique;
+        }
+        main section.norte .txt-regiao .pratos-norte {
+            display: flex;
+            padding: 10px 5px;
+            margin-top: 10px;
+            text-align: center;
+            justify-content: space-around;
+            background-color: #FFBF2A;
+            border-radius: 20px;
+            font-weight: 800;
+        }
+        main section.norte .txt-regiao .pratos-norte .desc-prato {
+            display: block;
+            color: #2A2B5B;
+            text-transform: uppercase;
+        }
+        main section.norte .txt-regiao .pratos-norte .desc-prato h4{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-style: oblique;
+        }
+        main section.norte .txt-regiao .pratos-norte .desc-prato p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        main section.norte .txt-regiao .pratos-norte .desc-prato ul {
+            margin-top: 20px;
+            list-style: none;
+            font-size: 12px;
+        }
+        main section.norte .txt-regiao .pratos-norte .desc-prato ul li {
+            margin-top: 20px;
+        }
+        main section.norte .txt-regiao .pratos-norte > img {
+            height: 190px;
+            width: 150px;
+            border-radius: 20px;
+            margin: 0 10px;
+        }
+    
     }
 }
 
