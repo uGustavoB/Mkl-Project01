@@ -478,6 +478,35 @@ footer .footer-ct{
     .footer-ct ul iframe{
         width: 100%;
     }
+
+    main {
+        background-color: #2552E6;
+        border-radius: 10px;
+        height: 100vh;
+        margin: 90px 20px;
+    }
+    .titulo {
+        margin-top: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .titulo h1{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;;
+        color: #F8F7F3;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    section.bebidas > div.tipo-bebidas {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 700px){
     .foods, .drinks{
@@ -503,7 +532,7 @@ footer .footer-ct{
     .logo-bg.active{
         margin-right: 90px;
     }    
-}
+
 
 /* KeyFrames */
 @keyframes navLinkFade {
@@ -550,4 +579,7 @@ nav.active{
 .nav-list.active{
     display: flex;
     transform: translateX(0);
-}
+}}
+
+
+
