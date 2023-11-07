@@ -53,7 +53,6 @@ div.logo img:hover {
 }
 
 div.nome-menu h1 {
-    margin-left: 50px;
     font-size: 45px;
     text-transform: uppercase;
     color: #2a2b5b;
@@ -185,6 +184,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     div.logo img:hover {
         transform: scale(1.05);
     }
+
     .nav-list {
         position: absolute;
         top: 13vh;
@@ -256,7 +256,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     /* TIPO REFEICAO*/
         main section.desc-menu {
         padding: 20px 2%;
-        background-image: url(../img/imagem-momento-refeicao.jpg);
+        background-image: url(../img/imagem-de-fundo.jpeg);
         background-size: cover;
         background-position: center;
         height: 87vh;
@@ -266,9 +266,9 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
 
     section.desc-menu .txt-momento-ref{
-        background-color: #f7f7f5;
-        padding: 50px 20px;
-        border-radius: 20px;
+        background-color: rgba(245, 245, 245, 0.935);
+        padding: 44px 20px;
+        border-radius: 10px;
     }
     
     section.desc-menu .txt-momento-ref h2 {
@@ -281,19 +281,18 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         margin-left: 15px;
         color: #2a2b5b;
         font-size:31px;
+        background-color: #8eeb15;
+        border-radius: 10px;
     }
     section.desc-menu .txt-momento-ref ul li a {
         font-size: 31px;
-        color: #f7b61e;
+        color: #019907;
     }
     
     section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
-        background-color: #ffffffee;
-        padding: 17px 30px;
-        border-radius: 20px;
-        transform: scale(1.05);
-        box-shadow: 0 0 8px #ffffffaf;
-        font-weight: 1;
+        padding: 17px;
+        border-radius: 15px;
+        color: #019907;
     }
 }
 

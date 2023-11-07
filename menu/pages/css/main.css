@@ -222,6 +222,8 @@ div.nome-menu h1 {
         font-size: 25px;
         text-transform: uppercase;
         font-style: oblique;
+        font-family:'Montserrat', sans-serif;
+        ;
     }
     main section.nordeste .txt-regiao .pratos-nordeste {
         display: flex;
@@ -229,7 +231,6 @@ div.nome-menu h1 {
         margin-top: 10px;
         text-align: center;
         justify-content: space-around;
-        background-color: #FFBF2A;
         border-radius: 20px;
         font-weight: 800;
     }
