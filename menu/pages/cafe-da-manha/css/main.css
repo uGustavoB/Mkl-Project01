@@ -15,6 +15,10 @@
     font-weight: 200;
     src: local('Montserrat Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap');
+
 /*GERAL*/
 * {
     box-sizing: border-box;
@@ -210,110 +214,48 @@ div.nome-menu h1 {
       transform: rotate(45deg) translate(-5px, -7px);
     }
     
-    /* TXT REGIAO NORDESTE */
-
-    main section.nordeste {
-        padding: 10px 0%;
-        margin: 0 auto;
+    /* CARDAPIO TITULO */
+    main {
+        background-color: #2552E6;
+        border-radius: 10px;
+        height: 100vh;
+        margin: 40px 20px;
     }
-
-    main section.nordeste .txt-regiao h3 {
-        margin-top: 10px;
-        font-size: 25px;
-        text-transform: uppercase;
-        font-style: oblique;
-        font-family:'Montserrat', sans-serif;
-        ;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste {
+    .titulo {
+        margin-top: 6px;
         display: flex;
-        padding: 10px 5px;
-        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .titulo h2{
         text-align: center;
-        justify-content: space-around;
-        border-radius: 20px;
-        font-weight: 800;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato {
-        display: block;
-        color: #2A2B5B;
+        font-family: 'Montserrat', sans-serif;;
+        color: #F8F7F3;
         text-transform: uppercase;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato h4{
-        text-transform: uppercase;
-        font-size: 20px;
-        font-style: oblique;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato p {
-        margin-top: 5px;
-        font-size: 16px;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato ul {
-        margin-top: 20px;
-        list-style: none;
-        font-size: 12px;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste .desc-prato ul li {
-        margin-top: 20px;
-    }
-    main section.nordeste .txt-regiao .pratos-nordeste > img {
-        height: 190px;
-        width: 150px;
-        border-radius: 20px;
-        margin: 0 10px;
-    }
-    /*TXT REGIAO NORTE*/
-
-        main section.norte {
-            padding: 10px 0%;
-            margin: 0 auto;
-        }
-    
-        section.norte .txt-regiao-norte h3 {
-            margin-top: 10px;
-            font-size: 25px;
-            text-transform: uppercase;
-            font-style: oblique;
-        }
-        section.norte .txt-regiao-norte .pratos-norte {
-            display: flex;
-            padding: 10px 5px;
-            margin-top: 10px;
-            text-align: center;
-            justify-content: space-around;
-            background-color: #FFBF2A;
-            border-radius: 20px;
-            font-weight: 800;
-        }
-        section.norte .txt-regiao-norte .pratos-norte .desc-prato {
-            display: block;
-            color: #2A2B5B;
-            text-transform: uppercase;
-        }
-        section.norte .txt-regiao-norte .pratos-norte .desc-prato h4{
-            text-transform: uppercase;
-            font-size: 20px;
-            font-style: oblique;
-        }
-        section.norte .txt-regiao-norte .pratos-nordeste .desc-prato p {
-            margin-top: 5px;
-            font-size: 16px;
-        }
-        section.norte .txt-regiao-norte .pratos-nordeste .desc-prato ul {
-            margin-top: 20px;
-            list-style: none;
-            font-size: 12px;
-        }
-        section.norte .txt-regiao-norte .pratos-norte .desc-prato ul li {
-            margin-top: 20px;
-        }
-        section.norte .txt-regiao-norte .pratos-norte > img {
-            height: 190px;
-            width: 150px;
-            border-radius: 20px;
-            margin: 0 10px;
-        }
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
         
+    }
+    .titulo h2 span {
+        font-size: 10px;
+    }
+    .titulo span {
+        color: #F8F7F3;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        color: #F8F7F3;
+        font-weight: 900;
+    }
+
+    /* COMIDAS */
+
+
     }
 
 
