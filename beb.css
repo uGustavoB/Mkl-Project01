@@ -491,6 +491,7 @@ footer .footer-ct{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 40px;
     }
     .titulo h1{
         text-align: center;
@@ -501,11 +502,15 @@ footer .footer-ct{
         display: flex;
         flex-direction: column;
     }
-    section.bebidas > div.tipo-bebidas {
+
+    .tipos-bebidas {
         display: flex;
-        flex-direction: column;
-        justify-content: start;
         align-items: center;
+        margin-top: 20px;
+    }
+    .tipos-bebidas p{
+        margin-left: 10px;
+        color: #F8F7F3;
     }
 }
 @media screen and (max-width: 700px){
