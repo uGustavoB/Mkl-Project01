@@ -83,7 +83,15 @@ nav{
     height: 180px;
     position: absolute;
     top: 100px;
+} 
+/*cor da bebida*/
+.bebes{
+    color: var(--white);
 }
+.bebes:hover:hover{
+    color: var(--green);
+}
+
 
 nav ul{
     list-style: none;
