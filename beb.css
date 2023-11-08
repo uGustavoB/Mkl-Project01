@@ -27,7 +27,7 @@
 .back-blue{
     background-color:var(--darkblue);
     width: 80%;
-    height: 1000px;
+    height: 1px;
     margin: 200px auto;
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
@@ -415,7 +415,7 @@ footer .footer-ct{
 }
 
 /* Media query's */
-@media screen and (max-width: 999px){
+@media screen and (max-width: 500000px){
     nav{
         justify-content: space-evenly;
         height: 14vh;
@@ -480,35 +480,72 @@ footer .footer-ct{
     }
 
     main {
-        background-color: #2552E6;
+        background-color: #2A2B5B;
         border-radius: 10px;
-        height: 100vh;
-        margin: 90px 20px;
+        height: 200vh;
+        margin: 90px 30px;
     }
     .titulo {
-        margin-top: 6px;
+        margin-top: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 100px;
     }
     .titulo h1{
         text-align: center;
         font-family: 'Montserrat', sans-serif;;
         color: #F8F7F3;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size:30px;
         display: flex;
         flex-direction: column;
     }
+    .ml {
+        
+        margin-bottom: 30px;
+        width: 125%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .preco {
+        width: 120%;
+        position: absolute;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .cana{
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;;
+        color: #F8F7F3;
+        text-transform: uppercase;
+        font-size:30px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--green);
+
+    }
+    .alcool{
+        background-color: var(--yellow);
+        margin-top: 50px;
+        width: 100%;
+    }
     .tipos-bebidas {
         display: flex;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .tipos-bebidas p{
+        
+        font-size: 14px;
+        text-transform: uppercase;
         margin-left: 10px;
         color: #F8F7F3;
     }
