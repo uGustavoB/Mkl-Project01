@@ -52,39 +52,23 @@ div.logo img:hover {
     transform: scale(1.05);
 }
 
+div.nome-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 div.nome-menu h1 {
     font-size: 45px;
     text-transform: uppercase;
     color: #2a2b5b;
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;  
-    flex-direction: column;
-    gap: 5px;
+.nav-list li {
+    display: none;
 }
 
-.nav-list li{
-    list-style: none;
-    background-color: #ffdd00c1;
-    padding: 3px 4px;
-    border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.nav-list li:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 6px #ffdd00c1;
-}
 
-.nav-list li a {
-    text-decoration: none;
-    font-size: 15px;
-    text-transform: uppercase;
-    color:#01c24b;
-    font-weight: 500
-}
+
 
 /* MENU MOBILE */
 
@@ -166,6 +150,9 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
     /* NAV BAR */
 
+    .rodape-nome{
+        display: none;
+    }
     nav.navbar-menu {
         padding: 20px 4%;
         display: flex;
@@ -185,6 +172,9 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         transform: scale(1.05);
     }
 
+    .nome-menu a {
+        display: none;
+    }
     .nav-list {
         position: absolute;
         top: 13vh;
