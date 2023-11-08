@@ -108,6 +108,7 @@ section.desc-menu .txt-momento-ref h2 {
     font-size: 40px;
     text-transform: uppercase;
     line-height: 44px;
+    color: #2a2b5b;
 }
 section.desc-menu .txt-momento-ref h2 span{
     display: block;
@@ -129,7 +130,7 @@ section.desc-menu .txt-momento-ref ul li a {
     color: #01c24b;
     text-transform: uppercase;
     line-height: 3;
-    transition: 0.4s;/*tempo para dar o zomm, deixando mais suave*/
+    transition: 0.5s;/*tempo para dar o zomm, deixando mais suave*/
 }
 
 section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
@@ -254,11 +255,6 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         justify-content: center;
         align-items: center;
     }
-    .bk{
-        background-color: #2a2b5b;
-        height: 80px;
-        border-radius: 10px;
-    }
     section.desc-menu .txt-momento-ref{
         background-color: rgba(255, 249, 249, 0.935);
         padding: 44px 20px;
@@ -269,7 +265,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         font-size: 30px;
         text-transform: uppercase;
         line-height: 40px;
-        color: #ffffff;   
+        color:#2a2b5b ;   
         margin-left: 10px;
     }
     section.desc-menu .txt-momento-ref h2 span{
@@ -278,11 +274,11 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         font-size:30px;
         border-radius: 10px;
         margin-right: 10px;
+        background-color: #2a2b5b;
     }
     section.desc-menu .txt-momento-ref ul li a {
         font-size: 31px;
         color: #019907;
-        font-weight: 900;
     }
     
     section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
