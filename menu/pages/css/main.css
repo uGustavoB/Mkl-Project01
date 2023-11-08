@@ -239,15 +239,6 @@ div.nome-menu h1 {
     
     }
     
-    .regiao {
-     margin-top: 50px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;;
-    color: #F8F7F3;
-    text-transform: uppercase;
-    font-size:30px;
-    background-color: #8a9901;
-    }
     .titulo h2 span {
         font-size: 10px;
     }
@@ -272,6 +263,9 @@ div.nome-menu h1 {
         text-transform: uppercase;
         margin-bottom: 10px;
         font-family: 'Montserrat', sans-serif;
+        background-color: #ffbf2add;
+        padding: 0 40px;
+        border-radius: 10px;
         
     }
     .texto-comida .nome-comida h4 {
