@@ -218,7 +218,7 @@ div.nome-menu h1 {
     main {
         background-color: #2a2b5b;
         border-radius: 10px;
-        height: 280vh;
+        height: auto;
         margin: 40px 20px;
     }
     .titulo {
@@ -356,7 +356,6 @@ div.nome-menu h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 0px;
         text-align: center;
     }
     .btn a {
