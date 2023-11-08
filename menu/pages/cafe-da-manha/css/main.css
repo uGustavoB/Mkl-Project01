@@ -255,6 +255,31 @@ div.nome-menu h1 {
 
     /* COMIDAS */
 
+    .nordeste {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 15px;
+    }
+    .nordeste .texto-comida h2 {
+        font-size: 25px;
+        color: #F8F7F3;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .nome-comida{
+        display: flex;
+        gap: 80px;
+    }
+    .nordeste .texto-comida .nome-comida p {
+        color: #F8F7F3;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 800;
+        margin:8px 0px;
+    }
+    .nordeste .imagem-comida img {
+        display: none;
+    }
 
     }
 
