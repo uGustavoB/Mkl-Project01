@@ -1,0 +1,290 @@
+/* FONTES */
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap);
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: local('Montserrat Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
+}
+
+/*GERAL*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+}
+nav.navbar-menu {
+    padding: 20px 4%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+}
+
+div.logo img {
+    height: 70px;
+    width: 100px;
+    transition: 0.2s;
+}
+
+div.logo img:hover {
+    transform: scale(1.05);
+}
+
+div.nome-menu h1 {
+    margin-left: 50px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;  
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-list li{
+    list-style: none;
+    background-color: #ffdd00c1;
+    padding: 3px 4px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 6px #ffdd00c1;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color:#01c24b;
+    font-weight: 500
+}
+
+/* MENU MOBILE */
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #000;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+  /* BEBIDAS */
+
+  main {
+    background-color: #2A2B5B;
+    border-radius: 10px;
+    height: 200vh;
+    margin: 90px 30px;
+}
+.titulo {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.titulo h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+    color: #F8F7F3;
+    text-transform: uppercase;
+    font-size:30px;
+    display: flex;
+    flex-direction: column;
+}
+.ml {
+    
+    margin-bottom: 30px;
+    width: 125%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.preco {
+    width: 120%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.cana{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+    color: #F8F7F3;
+    text-transform: uppercase;
+    font-size:30px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green);
+
+}
+.alcool{
+    background-color: var(--yellow);
+    margin-top: 50px;
+    width: 100%;
+}
+.tipos-bebidas {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.tipos-bebidas p{
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: #F8F7F3;
+}
+
+  /* RESPONSIVIDADE */
+  @media (max-width: 999px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    /* NAV BAR */
+
+    nav.navbar-menu {
+        padding: 20px 4%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 18vh;
+    }
+    
+    div.logo img {
+        height: 70px;
+        width: 100px;
+        transition: 0.2s;
+    }
+    
+    div.logo img:hover {
+        transform: scale(1.05);
+    }
+
+    div.nome-menu {
+        margin-right: 20px;
+    }
+    div.nome-menu h1 {
+        margin-left: 10px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    div.nome-menu h1 span {
+        display: block;
+
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 18vh;
+        right: 0;
+        width: 30vw;
+        height: 82vh;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+      }
+      
+      .nav-list li{
+        list-style: none;
+        background-color: #fff;
+        border-radius: 0;
+        padding: 0;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-left: 0;
+        opacity: 0;
+    }
+    .nav-list li:hover {
+        box-shadow: 0px 0px 8px #fff;
+    }
+    
+    .nav-list li a {
+        color: #0544c1;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+
+    /* MOBILE MENU */
+      .mobile-menu {
+        display: block;
+      }
+    
+    
+    .nav-list.active {
+      transform: translateX(0);
+    }
+    
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+  }
