@@ -224,9 +224,8 @@ main {
 
 /*menu*/
 .btn {
-    margin-top: 0px;
     display: flex;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
     justify-content: start;
     align-items: start;
     margin-bottom: 0px;
