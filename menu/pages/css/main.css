@@ -218,7 +218,7 @@ div.nome-menu h1 {
     main {
         background-color: #2a2b5b;
         border-radius: 10px;
-        height: auto;
+        height: 280vh;
         margin: 40px 20px;
     }
     .titulo {
@@ -255,24 +255,16 @@ div.nome-menu h1 {
 
     /* COMIDAS */
 
-    /*nordeste*/
-    .nordeste {
-        display: flex;
-        justify-content: space-between;
-        margin: 50px 15px;
-    }
+    /*geral*/
     .texto-comida h2 {
         font-size: 25px;
         color: #F8F7F3;
         text-transform: uppercase;
         margin-bottom: 10px;
         font-family: 'Montserrat', sans-serif;
+        
     }
-    .nome-comida{
-        display: flex;
-        gap: 80px;
-    }
-    .texto-comida .nome-comida p {
+    .texto-comida .nome-comida h4 {
         color: #F8F7F3;
         text-transform: uppercase;
         font-size: 14px;
@@ -284,34 +276,108 @@ div.nome-menu h1 {
         display: none;
     }
 
+    .preco {
+        font-weight: 500;
+    }
+    /*nordeste*/
+    .nordeste {
+        display: flex;
+        margin: 50px 15px;
+    }
+    .nordeste > .texto-comida > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 100px;
+        color: #F8F7F3;
+        text-align: right;
+    }
     /*norte*/
     .norte {
         display: flex;
         justify-content: space-between;
         margin: 40px 15px;  
     }
+    .norte > .texto-comida > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 155px;
+        color: #F8F7F3;
+        text-align: right;
+    }
 
     /*sudeste*/
     .sudeste {
         display: flex;
-        justify-content: space-between;
         margin: 40px 15px;  
+    }
+    .sudeste > .texto-comida > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 135px;
+        color: #F8F7F3;
+        text-align: right;
     }
 
     /*centro-oeste*/
     .centro-oeste {
         display: flex;
-        justify-content: space-between;
         margin: 40px 15px;  
+    }
+    .centro-oeste > .texto-comida > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 66px;
+        color: #F8F7F3;
+        text-align: right;
     }
 
     /*sul*/
     .sul {
     display: flex;
-    justify-content: space-between;
     margin: 40px 15px;  
     }
+    .sul > .texto-comida > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 80px;
+        color: #F8F7F3;
+        text-align: right;
+    }
 
+
+    /* LINK PARA BEBIDAS*/
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .btn a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        padding: 10px 50px;
+        background-color: #01c24b;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .btn a:hover {
+        box-shadow: 0px 0px 5px #01c24b;
+        transform: scale(1.02);
+        color: #F8F7F3;
+    }
+    .btn .icon-btn-bebidas {
+        font-size: 40px;
+    }
 
   }
 
