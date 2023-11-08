@@ -218,7 +218,7 @@ div.nome-menu h1 {
     main {
         background-color: #2a2b5b;
         border-radius: 10px;
-        height: 400vh;
+        height: auto;
         margin: 40px 20px;
     }
     .titulo {
@@ -297,7 +297,21 @@ div.nome-menu h1 {
         justify-content: space-between;
         margin: 40px 15px;  
     }
+
+    /*centro-oeste*/
+    .centro-oeste {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 15px;  
+    }
+
+    /*sul*/
+    .sul {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 15px;  
+    }
+
+
   }
 
-
-       
