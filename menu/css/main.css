@@ -284,7 +284,8 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
         padding: 17px;
         border-radius: 15px;
-        color: #019907;
+        color: #2a2b5b;
+        background-color: #01c24bc1;
     }
 }
 
