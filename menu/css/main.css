@@ -264,9 +264,13 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         justify-content: center;
         align-items: center;
     }
-
+    .bk{
+        background-color: #2a2b5b;
+        height: 80px;
+        border-radius: 10px;
+    }
     section.desc-menu .txt-momento-ref{
-        background-color: rgba(245, 245, 245, 0.935);
+        background-color: rgba(255, 249, 249, 0.935);
         padding: 44px 20px;
         border-radius: 10px;
     }
@@ -275,18 +279,20 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         font-size: 30px;
         text-transform: uppercase;
         line-height: 40px;
+        color: #ffffff;   
+        margin-left: 10px;
     }
     section.desc-menu .txt-momento-ref h2 span{
         display: block;
-        margin-left: 15px;
-        color: #2a2b5b;
-        font-size:31px;
-        background-color: #8eeb15;
+        color: #ffffff;
+        font-size:30px;
         border-radius: 10px;
+        margin-right: 10px;
     }
     section.desc-menu .txt-momento-ref ul li a {
         font-size: 31px;
         color: #019907;
+        font-weight: 900;
     }
     
     section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
