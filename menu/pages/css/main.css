@@ -71,6 +71,7 @@ div.nome-menu h1 {
     color: #2a2b5b;
 }
 div.nome-menu a {
+    color: #2a2b5b;
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
@@ -586,6 +587,17 @@ justify-content: space-around;
     }
     .btn .icon-btn-bebidas {
         font-size: 40px;
+    }
+
+  }
+
+  @media (min-width: 700px) {
+    .nav-list li {
+        display: none;
+    }
+
+    main section.desc-menu {
+        display: none;
     }
 
   }
