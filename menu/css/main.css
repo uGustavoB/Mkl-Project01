@@ -303,7 +303,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .nav-list li {
         display: none;
     }
