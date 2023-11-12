@@ -87,11 +87,18 @@ nav{
     position: absolute;
     top: 100px;
 } 
+.comes {
+    color: var(--white);
+
+}
+.comes:hover{
+    color: var(--green);
+}
 /*cor da bebida*/
 .bebes{
     color: var(--white);
 }
-.bebes:hover:hover{
+.bebes:hover{
     color: var(--yellow);
 }
 
