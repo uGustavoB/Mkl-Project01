@@ -67,6 +67,9 @@ nav{
     text-align: right;
     padding: 10px;
 }
+.menu a{
+    color: var(--purple);
+}
 
 .logo-bg{
     justify-content: center;
