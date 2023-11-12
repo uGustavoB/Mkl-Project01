@@ -422,7 +422,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
 /* TELAS MEDIAS - tablets,...*/
 
-@media (max-width: 900px) {
+@media (min-width: 800px) and (max-width:900px) {
     body {
         overflow-x: hidden;
     }
@@ -530,7 +530,14 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         display: none;
     }
 
-    main section.desc-menu-desktop h2{
+    main section.desc-menu-desktop {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/imagem-de-fundo.jpeg);
+        height: 87vh;
+    }
+
+    section.desc-menu-desktop h2{
         color: #2a2b5b;
         text-align: center;
         text-transform: uppercase;
@@ -540,13 +547,6 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         color: #F8F7F3;
         background-color: #2a2b5b;
         padding: 15px;
-    }
-
-    main section.desc-menu-desktop {
-        display: flex;
-        flex-direction: column;
-        background-image: url(../img/imagem-de-fundo.jpeg);
-        height: 87vh;
     }
 
     .imagens{
@@ -605,10 +605,11 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         display: flex;
         gap: 30px;
         justify-content: center;
-        background-color: #2552e6cb;
         padding: 30px;
         border-radius: 30px;
         margin: 18px 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bebidas-tipo{
