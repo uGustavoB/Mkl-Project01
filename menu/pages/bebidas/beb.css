@@ -38,6 +38,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
 }
 hr {
     color: #887a7a;
@@ -149,7 +151,7 @@ main {
     background-color: #2A2B5B;
     border-radius: 10px;
     height: auto;
-    margin: 40px 20px;
+    margin: 40px 260px;
 }
 .titulo {
     display: flex;
