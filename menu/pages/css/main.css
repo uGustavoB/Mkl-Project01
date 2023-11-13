@@ -72,6 +72,7 @@ div.nome-menu h1 {
     color: #2a2b5b;
 }
 div.nome-menu a {
+    color: #2a2b5b;
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
@@ -591,7 +592,6 @@ justify-content: space-around;
 
   }
 
-<<<<<<< HEAD
   @media (min-width: 1100px) {
     .nav-list li {
         display: none;
@@ -729,5 +729,3 @@ justify-content: space-around;
   }
 
 
-=======
->>>>>>> parent of 58dab46 (alteracoes para desktop)
