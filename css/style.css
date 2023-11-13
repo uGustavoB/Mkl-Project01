@@ -91,7 +91,7 @@ nav{
 .bebes{
     color: var(--white);
 }
-.bebes:hover:hover{
+.bebes:hover{
     color: var(--yellow);
 }
 
