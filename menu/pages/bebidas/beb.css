@@ -278,7 +278,7 @@ main {
 
 
   /* RESPONSIVIDADE */
-  @media (max-width: 999px) {
+  @media (max-width: 799px) {
 
     body {
         overflow-x: hidden;
@@ -390,7 +390,7 @@ main {
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     .nav-list li {
         display: none;
     }
