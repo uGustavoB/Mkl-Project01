@@ -16,16 +16,33 @@
     src: local('Montserrat Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
 }
 /*GERAL*/
+:root{
+    --white: #F8F7F3;
+    --gray: #3B3B3B;
+    --black: #0a0a0a;
+    --lightgray: #ECECE8;
+    --vinered: #CD0232;
+    --darkblue: #011246;
+    --blue: #2552E6;
+    --purple: #2A2B5B;
+    --green: #019907;
+    --lightgreen: #8CE619;
+    --lightbrown: #FE9B67;
+    --yellow: #FFBF2A;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 /* NAV */
