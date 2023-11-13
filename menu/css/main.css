@@ -431,7 +431,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
 /* TELAS MEDIAS - tablets,...*/
 
-@media (max-width: 900px) {
+@media (min-width: 800px) and (max-width:900px) {
     body {
         overflow-x: hidden;
     }
@@ -538,9 +538,17 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     main section.desc-menu {
         display: none;
     }
-
     main section.desc-menu-desktop h2{
         color: var(--purple);
+    main section.desc-menu-desktop {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/imagem-de-fundo.jpeg);
+        height: 87vh;
+    }
+
+    section.desc-menu-desktop h2{
+        color: #2a2b5b;
         text-align: center;
         text-transform: uppercase;
         font-family: "Montserrat";
@@ -550,7 +558,6 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         /* background-color: var(--purple); */
         padding: 15px;
     }
-
     main section.desc-menu-desktop {
         display: flex;
         flex-direction: column;
@@ -617,9 +624,12 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     .cardapio-bebidas{
         gap: 30px;
         background-color: var(--blue);
+        justify-content: center;
         padding: 30px;
         border-radius: 30px;
         margin: 18px 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bebidas-tipo{
