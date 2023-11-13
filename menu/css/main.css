@@ -303,11 +303,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     }
 }
 
-<<<<<<< HEAD
 @media (min-width: 700px) {
-=======
-@media (min-width: 800px) {
->>>>>>> parent of aa43e55 (alteracao telas tablet)
     .nav-list li {
         display: none;
     }
