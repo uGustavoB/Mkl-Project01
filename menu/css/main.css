@@ -125,7 +125,6 @@ main section.desc-menu {
 }
 
 section.desc-menu .txt-momento-ref{
-    background-color: #ffdd00f0;
     padding: 100px 180px;
     border-radius: 20px;
 }
@@ -323,7 +322,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
 /* TELA COMPUTADOR*/
 
-@media (min-width: 1100px) {
+@media (min-width: 1100px){
     .nav-list li {
         display: none;
     }
@@ -343,10 +342,10 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
     .imagens{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-flow: wrap;
         background-color: #f8f7f38e;
-        border-radius: 40px;
+        border-radius: 70px;
         margin: 30px;
     }
 
@@ -396,20 +395,21 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
     section.desc-menu-desktop .bebidas-menu {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         flex-flow: wrap;
         text-align: center;
+        gap: 50px;
         background-color: #f8f7f38e;
         border-radius: 40px;
-        margin: 30px;
+        margin: 20px 200px 0 200px;
+        padding: 20px;
     }
 
     .bebidas-menu .titulo-tipo-bebida {
         flex-basis: 100%;
         text-align: center;
-        margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 25px;
         text-transform: uppercase;
         font-style:oblique;
         color: #2A2B5B;
@@ -424,7 +424,6 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         background-color: #2552e689;
         padding: 15px;
         text-transform: uppercase;
-        gap: 10px;
         transition: 1s;
     }
     .escolha-tipo-bebida a{
@@ -447,228 +446,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
 /* TELAS MEDIAS - tablets,...*/
 
-@media (min-width: 800px) and (max-width:900) {
-    body {
-        overflow-x: hidden;
-    }
-    /* NAV BAR */
 
-    .rodape-nome{
-        display: none;
-    }
-    nav.navbar-menu {
-        padding: 20px 4%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: space-between;
-        height: 13vh;
-    }
-    
-    div.logo img {
-        height: 70px;
-        width: 100px;
-        transition: 0.2s;
-    }
-    
-    div.logo img:hover {
-        transform: scale(1.05);
-    }
-
-    .nome-menu a {
-        display: none;
-    }
-    .nav-list {
-        display: flex;
-        position: absolute;
-        top: 13vh;
-        right: 0;
-        width: 30vw;
-        height: 87vh;
-        background: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        z-index: 10000;
-
-      }
-      
-      .nav-list li{
-        list-style: none;
-        background-color: #fff;
-        border-radius: 0;
-        padding: 0;
-        transition: 0.3s;
-        cursor: pointer;
-        margin-left: 0;
-        opacity: 0;
-    }
-    .nav-list li:hover {
-        box-shadow: 0px 0px 8px #fff;
-    }
-    
-    .nav-list li a {
-        color: #2a2b5b;
-        text-decoration: none;
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-    
-
-    /* MOBILE MENU */
-      .mobile-menu {
-        display: block;
-      }
-    
-    
-    .nav-list.active {
-      transform: translateX(0);
-    }
-    
-    @keyframes navLinkFade {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .mobile-menu.active .line1 {
-      transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    
-    .mobile-menu.active .line2 {
-      opacity: 0;
-    }
-    
-    .mobile-menu.active .line3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-
-    /* tipos refeicao */
-    main section.desc-menu {
-        display: none;
-    }
-
-    main section.desc-menu-desktop h2{
-        color: #2a2b5b;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: "Montserrat";
-        font-weight: 700;
-        margin-top: 50px;
-        color: #F8F7F3;
-        background-color: #2a2b5b;
-        padding: 15px;
-    }
-
-    main section.desc-menu-desktop {
-        display: flex;
-        flex-direction: column;
-        background-image: url(../img/imagem-de-fundo.jpeg);
-        height: 87vh;
-    }
-
-    .imagens{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .img-port{
-        margin-top: 50px;
-        width: 60vh;
-        height: 120px;
-        background-size: cover;
-        background-position: 100% 0;
-        transition: 3s;
-        border-radius: 5px;
-        position: relative;
-    }
-
-    .img-port:hover {
-        background-position: 100% 100%;
-        transform: scale(1.06);
-    }
-
-    .overlay a{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        background-color: #2552e68a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 700;
-        color: #F8F7F3;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-
-    /*parte das bebidas*/
-
-    .desc-menu-desktop h3 {
-        margin-top: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #2a2b5b;
-        background-color: #F8F7F3;
-        padding: 15px;
-        font-size: 25px;
-    }
-    .cardapio-bebidas{
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        background-color: #2552e6cb;
-        padding: 30px;
-        border-radius: 30px;
-        margin: 18px 10px;
-    }
-
-    .bebidas-tipo{
-        width: 35vh;
-        height: 120px;
-        background-size: cover;
-        background-position: 100% 0;
-        transition: 3s;
-        border-radius: 15px;
-        position: relative;
-    }
-
-    .bebidas-tipo:hover {
-        background-position: 100% 100%;
-        transform: scale(1.07);
-    }
-
-    .overlay-beb a{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        background-color: #2552e652;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 35px;
-        font-weight: 700;
-        color: #F8F7F3;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-}
        
 
 
