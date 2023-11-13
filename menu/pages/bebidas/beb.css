@@ -387,7 +387,7 @@ main {
     }
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 700px) {
     .nav-list li {
         display: none;
     }
