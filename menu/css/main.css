@@ -312,6 +312,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         border-radius: 15px;
         color: #2a2b5b;
         background-color: #01c24bc1;
+        font-weight: 500;
     }
 
     .desc-menu-desktop {
