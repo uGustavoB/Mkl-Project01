@@ -619,7 +619,7 @@ section.desc-menu-desktop .bebidas-menu {
     align-items: center;
     flex-flow: wrap;
     text-align: center;
-    gap: 50px;
+    gap: 20px;
     background-color: #f8f7f38e;
     border-radius: 40px;
     margin: 70px 200px 0 200px;
@@ -642,7 +642,7 @@ section.desc-menu-desktop .bebidas-menu {
 .escolha-tipo-bebida {
     border-radius: 20px;
     background-color: #2552e689;
-    padding: 15px;
+    padding: 8px;
     text-transform: uppercase;
     transition: 1s;
 }
@@ -651,6 +651,10 @@ section.desc-menu-desktop .bebidas-menu {
     font-size: 30px;
     font-weight: 1200;
     color:#F8F7F3;
+}
+.escolha-tipo-bebida a span {
+    display: block;
+    text-align: left;
 }
 
 .escolha-tipo-bebida:hover{
