@@ -337,7 +337,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         background-image: url(../img/img-menu-principal.jpg);
         background-position: center;
         background-size: cover;
-        height: auto;
+        height: 85vh;
     }
 
     .imagens{
@@ -557,7 +557,7 @@ main section.desc-menu-desktop {
     background-image: url(../img/img-menu-principal.jpg);
     background-position: center;
     background-size: cover;
-    height: auto;
+    height: 87vh;
 }
 
 .imagens{

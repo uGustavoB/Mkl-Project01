@@ -79,6 +79,7 @@ nav{
     border-radius: 80px;
     position: relative;
 }
+
 .logo{
     background: url(../img/logo.png) center/contain no-repeat;
     background-image: grad;
@@ -141,6 +142,7 @@ nav ul li{
     font-size: 3rem;
     line-height: 1;
     padding: 0 20px;
+    margin: 0 30px;
     font-family: 'Inknut Antiqua', serif;
     border-left: 10px solid var(--yellow);
     border-right: 10px solid var(--yellow);
@@ -301,7 +303,7 @@ main section.reserva{
 section.reserva .reserva-box{
     max-width: 500px;
     height: 100%;
-    background-color: var(--darkblue);
+    border-radius: 10px;
     margin: 0 20px;
     color: var(--white);
 }
