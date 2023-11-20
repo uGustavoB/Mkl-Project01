@@ -117,7 +117,7 @@ main section.desc-menu {
     background-image: url(../img/imagem-restaurante.jpeg);
     background-size: cover;
     background-position: center;
-    height: 87vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,6 +173,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
     body {
         overflow-x: hidden;
+        overflow-y: hidden;
     }
     /* NAV BAR */
 
@@ -276,7 +277,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         background-image: url(../img/imagem-de-fundo.jpeg);
         background-size: cover;
         background-position: center;
-        height: 87vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -337,7 +338,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         background-image: url(../img/img-menu-principal.jpg);
         background-position: center;
         background-size: cover;
-        height: 85vh;
+        height: auto;
     }
 
     .imagens{
@@ -449,6 +450,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 /* NAV BAR */
 body{
     height: 100vh;
+    overflow-x: hidden;
 }
 .rodape-nome{
     display: none;
@@ -557,7 +559,7 @@ main section.desc-menu-desktop {
     background-image: url(../img/img-menu-principal.jpg);
     background-position: center;
     background-size: cover;
-    height: 87vh;
+    height: auto;
 }
 
 .imagens{
