@@ -374,6 +374,13 @@ section.reserva .btn {
     border-bottom-right-radius: 5px;
 }
 
+.food-bg h1 a.comes{
+    color: #F8F7F3;
+}
+.food-bg h1 a.comes:hover{
+    color: #019907;
+}
+
 /* Footer */
 footer{
     background-color: var(--purple);

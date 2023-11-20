@@ -318,6 +318,7 @@ main {
         justify-content: space-around;
         transform: scale(0.0);
         transition: transform 0.3s ease-in;
+        z-index: 10000;
       }
       
       .nav-list li{
