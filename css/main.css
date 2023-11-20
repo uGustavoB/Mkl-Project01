@@ -15,7 +15,7 @@
     font-weight: 200;
     src: local('Montserrat Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
 }
-/*GERAL*/
+
 :root{
     --white: #F8F7F3;
     --gray: #3B3B3B;
@@ -39,9 +39,9 @@
 }
 
 html, body {
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;  
 }
-
 /* NAV */
 
 nav {
@@ -152,7 +152,7 @@ section.desc-menu .txt-momento-ref ul li a {
     color: #01c24b;
     text-transform: uppercase;
     line-height: 3;
-    transition: 0.5s;/*tempo para dar o zomm, deixando mais suave*/
+    transition: 0.5s;
 }
 
 section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento-ref ul li a:active{
@@ -168,11 +168,6 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
 
 /* TELAS TELEFONE */
 @media (max-width: 799px) {
-
-
-    html, body {
-        overflow-x: hidden;
-    }
 
     /* NAV BAR */
 
@@ -201,25 +196,40 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     .nome-menu a {
         display: none;
     }
-    .nav-list{
-        display: none;
+    .nav-list {
+        display: flex;
         position: absolute;
-        top: 14vh;
+        top: 13vh;
         right: 0;
-        width: 50vw;
-        height: 86vh;
-        background: var(--white);
+        width: 30vw;
+        height: 87vh;
+        background: #fff;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
-    }
-    .nav-list li{
-        /* margin-left: 0; */
+        transform: scale(0.0);
+        transition: transform 0.3s ease-in;
+      }
+      
+      .nav-list li{
+        list-style: none;
+        background-color: #fff;
+        border-radius: 0;
+        padding: 0;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-left: 0;
         opacity: 0;
     }
-    .nav-list li a{
-        padding: 20px;
+    .nav-list li:hover {
+        box-shadow: 0px 0px 8px #fff;
+    }
+    
+    .nav-list li a {
+        color: #2a2b5b;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
     }
     
 
@@ -377,7 +387,7 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
         color: #ECECE8;
     }
 
-    /*parte das bebidas*/
+
 
     section.desc-menu-desktop .bebidas-menu {
         display: flex;
@@ -473,7 +483,7 @@ div.logo img:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100%);
+    transform: scale(0.0);
     transition: transform 0.3s ease-in;
   }
   
@@ -598,7 +608,7 @@ main section.desc-menu-desktop {
     color: #ECECE8;
 }
 
-/*parte das bebidas*/
+
 
 section.desc-menu-desktop .bebidas-menu {
     display: flex;
@@ -654,20 +664,3 @@ section.desc-menu-desktop .bebidas-menu {
 }
 
 }
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
