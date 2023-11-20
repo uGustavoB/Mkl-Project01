@@ -269,10 +269,10 @@ section.desc-menu .txt-momento-ref ul li a:hover, section.desc-menu .txt-momento
     
     main section.desc-menu {
         padding: 40px 4%;
-        background-image: url(../img/imagem-restaurante.jpeg);
+        background-image: url(../img/imagem-de-fundo.jpeg);
         background-size: cover;
         background-position: center;
-        height: 85%;
+        height: 87vh;
         display: flex;
         justify-content: center;
         align-items: center;

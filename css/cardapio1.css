@@ -346,6 +346,9 @@ justify-content: space-around;
     .nome-menu a {
         display: none;
     }
+    div.nome-menu h1{
+        font-size: 30px;
+    }
     .nav-list {
         display: flex;
         position: absolute;
